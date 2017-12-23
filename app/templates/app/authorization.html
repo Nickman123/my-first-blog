@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Lukyanov Blog - Авторизация</title>
+<meta name="generator" content="WYSIWYG Web Builder 12 - http://www.wysiwygwebbuilder.com">
+    {%load staticfiles%}
+<link href="{% static "app/content/authorization/pie-chart.png" %}" rel="shortcut icon" type="image/x-icon">
+<link href="{% static "app/content/authorization/Проект2.css" %}" rel="stylesheet">
+<link href="{% static "app/content/authorization/authorization.css" %}" rel="stylesheet">
+</head>
+<body>
+<div id="space"><br></div>
+<div id="container">
+<div id="Layer1" style="position:absolute;text-align:left;left:244px;top:249px;width:481px;height:578px;z-index:9;">
+<div id="wb_Image1" style="position:absolute;left:175px;top:0px;width:130px;height:130px;z-index:0;">
+<a href="/"><img src="{% static "app/content/authorization/images/лого.png" %}" id="Image1" alt=""></a></div>
+<div id="wb_Text1" style="position:absolute;left:140px;top:130px;width:201px;height:29px;text-align:center;z-index:1;">
+<span style="color:#000000;font-family:'Trebuchet MS';font-size:24px;">Вход в систему</span></div>
+<div id="wb_Form1" style="position:absolute;left:25px;top:168px;width:430px;height:275px;z-index:2;">
+<form name="Form1" method="post" id="Form1">
+{%csrf_token%}
+</div>
+<input type="password" id="Editbox1" style="position:absolute;left:66px;top:270px;width:338px;height:40px;line-height:40px;z-index:3;" name="password" value="" spellcheck="false" placeholder="&#1055;&#1072;&#1088;&#1086;&#1083;&#1100;">
+<input type="submit" id="Button1" name="login" value="Вход" style="position:absolute;left:66px;top:375px;width:348px;height:50px;z-index:4;">
+<div id="wb_Text2" style="position:absolute;left:115px;top:494px;width:250px;height:16px;text-align:center;z-index:5;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Еще нет своего аккаунта?</span></div>
+<hr id="Line1" style="position:absolute;left:66px;top:482px;width:348px;height:2px;z-index:6;">
+<div id="wb_Text4" style="position:absolute;left:115px;top:524px;width:250px;height:16px;text-align:center;z-index:7;">
+<span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><u><a href="/registration">Регистрируйся прямо сейчас!</a></u></span></div>
+     {%if login_error%}
+<div id="wb_Text5" style="position:absolute;left:115px;top:339px;width:250px;height:16px;text-align:center;z-index:8;">
+<span style="color:#FF0000;font-family:Arial;font-size:13px;">{{login_error}}</span></div>
+     {%endif%}
+</div>
+   
+<input type="text" id="Editbox2" style="position:absolute;left:311px;top:436px;width:338px;height:40px;line-height:40px;z-index:10;" name="login" value="" spellcheck="false" placeholder="&#1042;&#1072;&#1096; &#1083;&#1086;&#1075;&#1080;&#1085;">
+    </form>
+<div id="wb_Text3" style="position:absolute;left:360px;top:704px;width:250px;height:16px;text-align:center;z-index:11;">
+<span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><u><a href="#" class="Серая_ссылка_с_подчёрк">Забыли пароль или логин?</a></u></span></div>
+</div>
+</body>
+</html>

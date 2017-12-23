@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Lukyanov Blog - Обо мне</title>
+    {%load staticfiles%}
+<link href="{% static "app/content/website/pie-chart.png" %}" rel="shortcut icon" type="image/x-icon">
+<link href="{% static "app/content/website/font-awesome.min.css" %}" rel="stylesheet">
+<link href="{% static "app/content/website/Проект2.css" %}" rel="stylesheet">
+<link href="{% static "app/content/website/about.css" %}" rel="stylesheet">
+<script src="{% static "app/content/website/jquery-1.12.4.min.js" %}"></script>
+<script src="{% static "app/content/website/wb.carousel.min.js" %}"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: '{% static "app/content/website/images/page_default.png" %}',
+      pagination_img_active: '{% static "app/content/website/images/page_active.png" %}',
+      start: 0
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+});
+</script>
+</head>
+<body>
+<div id="space"><br></div>
+<div id="container">
+<div id="wb_Text7" style="position:absolute;left:248px;top:435px;width:506px;height:48px;text-align:center;z-index:17;">
+<span style="color:#556080;font-family:Arial;font-size:27px;">Немного обо мне</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span></div>
+<div id="Layer1" style="position:absolute;text-align:left;left:32px;top:1079px;width:906px;height:628px;z-index:18;">
+<div id="wb_PhotoGallery1" style="position:absolute;left:34px;top:89px;width:839px;height:321px;z-index:0;">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/w-GnMYdfIvE.jpg"><img alt="" src="{% static "app/content/website/images/w-GnMYdfIvE.jpg" %}"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/xInqd6HqWRY.jpg"><img alt="" src="{% static "app/content/website/images/xInqd6HqWRY.jpg" %}"></a>
+      </div>
+      <div class="clearfix visible-col2"></div>
+   </div>
+</div></div>
+<div id="wb_Text8" style="position:absolute;left:200px;top:29px;width:506px;height:48px;text-align:center;z-index:1;">
+<span style="color:#556080;font-family:Arial;font-size:27px;">Как же я получаю деньги?</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span></div>
+<div id="wb_Text9" style="position:absolute;left:117px;top:442px;width:673px;height:184px;text-align:center;z-index:2;">
+<span style="color:#556080;font-family:Arial;font-size:21px;">Мне платят деньги за каждого нового партнера, за каждого кто покупает на сайте компаний какие-либо продукты, товары, услуги и т.д. Я уже работаю в достаточно серьезных компаниях, и у меня есть своя команда спонсоров и партнеров, которая помогает мне с моим продвижением. А также формирую свой инвестиционный портфель, который будет кормить меня на протяжении моей жизни и затем перейдет по наследству к моим детям и внукам.</span><span style="color:#000000;font-family:Arial;font-size:13px;"><br></span></div>
+</div>
+<hr id="Line3" style="position:absolute;left:0px;top:385px;width:970px;height:1px;z-index:19;">
+<div id="wb_Image1" style="position:absolute;left:367px;top:52px;width:236px;height:236px;z-index:20;">
+<a href="/"><img src="{% static "app/content/website/images/лого.png" %}" id="Image1" alt=""></a></div>
+<hr id="Line1" style="position:absolute;left:0px;top:303px;width:970px;height:4px;z-index:21;">
+<div id="wb_ResponsiveMenu1" style="position:absolute;left:186px;top:308px;width:599px;height:77px;z-index:22;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Меню<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1">
+<li><a href="/"><i class="fa fa-home fa-2x">&nbsp;</i><br>&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></li>
+<li>
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-briefcase fa-2x">&nbsp;</i>&#1055;&#1088;&#1086;&#1077;&#1082;&#1090;&#1099;<b class="arrow-down"></b></label>
+<a href="/skyway"><i class="fa fa-briefcase fa-2x">&nbsp;</i><br>&#1055;&#1088;&#1086;&#1077;&#1082;&#1090;&#1099;<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul>
+<li><a href="/skyway"><i class="fa fa-train fa-2x">&nbsp;</i>SkyWay</a></li>
+<li><a href="/copyrighting"><i class="fa fa-newspaper-o fa-2x">&nbsp;</i>&#1050;&#1086;&#1087;&#1080;&#1088;&#1072;&#1081;&#1090;&#1080;&#1085;&#1075;</a></li>
+</ul>
+</li>
+<li>
+<label for="ResponsiveMenu1-submenu-1" class="toggle"><i class="fa fa-user-secret fa-2x">&nbsp;</i>&#1051;&#1080;&#1095;&#1085;&#1099;&#1081;&nbsp;&#1082;&#1072;&#1073;&#1080;&#1085;&#1077;&#1090;<b class="arrow-down"></b></label>
+<a href="/login"><i class="fa fa-user-secret fa-2x">&nbsp;</i><br>&#1051;&#1080;&#1095;&#1085;&#1099;&#1081;&nbsp;&#1082;&#1072;&#1073;&#1080;&#1085;&#1077;&#1090;<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul>
+<li><a href="/login"><i class="fa fa-desktop fa-2x">&nbsp;</i>&#1042;&#1093;&#1086;&#1076;</a></li>
+<li><a href="/registration"><i class="fa fa-registered fa-2x">&nbsp;</i>&#1056;&#1077;&#1075;&#1080;&#1089;&#1090;&#1088;&#1072;&#1094;&#1080;&#1103;</a></li>
+</ul>
+</li>
+<li><a href="/about"><i class="fa fa-user fa-2x">&nbsp;</i><br>&#1054;&#1073;&#1086;&nbsp;&#1084;&#1085;&#1077;</a></li>
+</ul>
+</div>
+<div id="wb_Carousel1" style="position:absolute;left:111px;top:540px;width:749px;height:471px;z-index:23;overflow:hidden;">
+<div id="Carousel1" style="position:absolute">
+<div class="frame">
+<div id="wb_Image6" style="position:absolute;left:45px;top:-4px;width:319px;height:425px;z-index:3;">
+<img src="{% static "app/content/website/images/Danil 2.jpg" %}" id="Image6" alt=""></div>
+<div id="wb_Text1" style="position:absolute;left:402px;top:136px;width:347px;height:145px;text-align:center;z-index:4;">
+<span style="color:#556080;font-family:'Trebuchet MS';font-size:24px;">Меня зовут Лукьянов Данил и мне 18 лет, я начинающий сетевик и частный инвестор, в прошлом году заработал в интернете 100 000 рублей.</span></div>
+</div>
+<div class="frame">
+<div id="wb_Image5" style="position:absolute;left:902px;top:4px;width:475px;height:316px;z-index:5;">
+<img src="{% static "app/content/website/images/Danil.jpg" %}" id="Image5" alt=""></div>
+<div id="wb_Text4" style="position:absolute;left:821px;top:335px;width:659px;height:81px;text-align:center;z-index:6;">
+<span style="color:#556080;font-family:Arial;font-size:24px;">Сейчас я активно веду бизнес в интернете. Основной мой заработок на сегодняшний день идет с сетевого маркетинга и инвестиций в стартапы.</span></div>
+</div>
+<div class="frame">
+<div id="wb_Text5" style="position:absolute;left:1559px;top:367px;width:659px;height:54px;text-align:center;z-index:7;">
+<span style="color:#556080;font-family:Arial;font-size:24px;">Я занимаюсь рекламой в интернете и инвестированием в различные технологии (краудинвестинг).</span></div>
+<div id="wb_Image8" style="position:absolute;left:1615px;top:19px;width:547px;height:307px;z-index:8;">
+<img src="{% static "app/content/website/images/t3OG-sUUi5c.jpg" %}" id="Image8" alt=""></div>
+</div>
+<div class="frame">
+<div id="wb_Image7" style="position:absolute;left:2250px;top:15px;width:250px;height:314px;z-index:9;">
+<img src="{% static "app/content/website/images/6xAsi_-4MI4.jpg" %}" id="Image7" alt=""></div>
+<div id="wb_Text6" style="position:absolute;left:2519px;top:118px;width:478px;height:108px;text-align:center;z-index:10;">
+<span style="color:#556080;font-family:Arial;font-size:24px;">В данном блоге я пишу о том, как я иду к своей цели и с какими трудностями сталкиваюсь в процессе. Описываю свой путь, успехи и неудачи</span></div>
+</div>
+</div>
+</div>
+<div id="wb_Text2" style="position:absolute;left:105px;top:709px;width:866px;height:2px;z-index:24;">
+&nbsp;</div>
+<div id="wb_Text10" style="position:absolute;left:339px;top:1941px;width:250px;height:16px;z-index:25;">
+&nbsp;</div>
+<div id="wb_Text11" style="position:absolute;left:130px;top:1795px;width:711px;height:54px;text-align:center;z-index:26;">
+<span style="color:#556080;font-family:Arial;font-size:24px;">Не только начинающим и опытным сетевикам, но и частным инвесторам будет полезно читать мой блог</span></div>
+<hr id="Line2" style="position:absolute;left:0px;top:1771px;width:970px;height:1px;z-index:27;">
+<div id="wb_Shape1" style="position:absolute;left:350px;top:1887px;width:270px;height:54px;z-index:28;">
+<a href="ссылка на регистрацию"><img class="hover" src="{% static "app/content/website/images/img0001_hover.png" %}" alt="" style="border-width:0;width:270px;height:54px;"><span><img src="{% static "app/content/website/images/img0001.png" %}" id="Shape1" alt="" style="width:270px;height:54px;"></span></a></div>
+</div>
+<div id="PageFooter1" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:2003px;width:100%;height:121px;z-index:29;">
+<div id="PageFooter1_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_MaterialIcon1" style="position:absolute;left:473px;top:56px;width:24px;height:22px;text-align:center;z-index:11;">
+<a href="/"><div id="MaterialIcon1"><i class="material-icons">&#xe8b6;</i></div></a></div>
+<div id="wb_Image4" style="position:absolute;left:892px;top:60px;width:14px;height:14px;z-index:12;">
+<a href="http://twitter.com/_LUCKYUNG_"><img src="{% static "app/content/website/images/003-twitter-letter-logo.png" %}" id="Image4" alt=""></a></div>
+<div id="wb_Text3" style="position:absolute;left:36px;top:53px;width:423px;height:15px;z-index:13;">
+<span style="color:#909090;font-family:Arial;font-size:12px;">© 2017&nbsp; All rights reserved · Powered by <u><a href="/" class="низ">Playbox Media Group</a></u></span></div>
+<div id="wb_Image3" style="position:absolute;left:918px;top:60px;width:14px;height:14px;z-index:14;">
+<a href="http://instagram.com/dankalukianov"><img src="{% static "app/content/website/images/001-instagram-logo.png" %}" id="Image3" alt=""></a></div>
+<div id="wb_Image2" style="position:absolute;left:943px;top:60px;width:14px;height:14px;z-index:15;">
+<a href="http://vk.com/dannys142"><img src="{% static "app/content/website/images/002-vk.png" %}" id="Image2" alt=""></a></div>
+<hr id="Line4" style="position:absolute;left:0px;top:21px;width:970px;height:1px;z-index:16;">
+</div>
+</div>
+</body>
+</html>
